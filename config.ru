@@ -8,3 +8,5 @@ end
 
 use GamersController
 run ApplicationController
+use CartsController
+use GamesController
