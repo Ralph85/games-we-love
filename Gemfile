@@ -23,4 +23,4 @@ end
 group :development do
   gem 'pry'
   gem 'rubocop'
-end 
+end

@@ -1,4 +1,5 @@
 class Gamer < ActiveRecord::Base
-    has_secure_password
-    has_many :games
+  # frozen_string_literal: true
+  has_secure_password
+  has_many :games
 end

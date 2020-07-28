@@ -1,43 +1,42 @@
+# Manages carts-based routing , helper, sessions
 class CartsController < ApplicationController
-
-  
+  # frozen_string_literal: true
   # GET: /carts/new
-  get "/carts/new" do
-    erb :"/carts/new.html"
+  get '/carts/new' do
+    erb :'/carts/new.html'
   end
-  
+
   # create cart
-  post "/carts" do
+  post '/carts' do
     # redirect to cart
-    redirect "/carts/:id"
+    redirect '/carts/:id'
   end
-  
+
   # GET: /carts/5
-  get "/carts/:id" do
-    erb :"/carts/show.html"
+  get '/carts/:id' do
+    erb :'/carts/show.html'
   end
-  
+
   # GET: /carts/5/edit
-  get "/carts/:id/edit" do
-    erb :"/carts/edit.html"
+  get '/carts/:id/edit' do
+    erb :'/carts/edit.html'
   end
-  
+
   # PATCH: /carts/5
-  patch "/carts/:id" do
+  patch '/carts/:id' do
     # update cart
-    redirect "/carts/:id"
+    redirect '/carts/:id'
   end
-  
+
   # DELETE: /carts/5/delete
-  delete "/carts/:id/delete" do
+  delete '/carts/:id/delete' do
     # delete the cart
     # redirect to /game/:game_id
-    redirect "/"
+    redirect '/'
   end
 
   # GET: /carts
-  # get "/carts" do
-  #   erb :"/carts/index.html"
+  # get '/carts' do
+  #   erb :'/carts/index.html'
   # end
-
 end

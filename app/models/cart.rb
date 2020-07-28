@@ -1,3 +1,4 @@
 class Cart < ActiveRecord::Base
-    has_many :games
+  # frozen_string_literal: true
+  has_many :games
 end
